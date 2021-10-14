@@ -1,0 +1,63 @@
+//themes
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+@import "./variables";
+
+.development {
+  margin: 0px;
+  height: 52rem;
+  .dev {
+    width: 300px;
+    margin: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .icon {
+      color: $orange;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .title {
+      color: $gray-9;
+      margin-left: 2rem;
+    }
+  }
+  .projects {
+    .pro {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 6rem;
+      margin-top: 5rem;
+      :hover {
+        box-shadow: 3px 8px 15px $gray-7;
+        transform: translateX(2rem, 2rem);
+      }
+      .preview {
+        display: inline-block;
+        width: 450px;
+        height: 250px;
+        border: 3px solid darken($gray-6, 10%);
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: "690px") {
+  .development {
+    .projects {
+      .pro {
+        .preview {
+          width: 80%;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

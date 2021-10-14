@@ -1,0 +1,56 @@
+//themes
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+@import "./variables";
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 52rem;
+  margin: auto;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  .hello {
+    font-family: "Montserrat", sans-serif;
+    margin: 2rem 2rem;
+    margin-bottom: 0%;
+    font-weight: 900;
+    .name:hover {
+      color: $danger;
+      cursor: pointer;
+    }
+  }
+  .desc {
+    color: $gray_8;
+    margin: 0rem 2rem 2rem 2rem;
+    width: 450px;
+  }
+  .tag {
+    color: $gray_8;
+    margin: 0rem 2rem 2rem 2rem;
+    width: 450px;
+    color: $secondary;
+  }
+  .typing {
+    margin: 0rem 2rem 2rem 2rem;
+    color: $gray_8;
+    font-family: "Roboto Mono", monospace;
+  }
+  .down {
+    font-size: 4.5rem;
+    margin: 2rem;
+    color: $gray_7;
+  }
+}
+@media (max-width: "570px") {
+  .intro {
+    margin: 1rem;
+    .desc {
+      color: $gray_8;
+      margin: 0rem 2rem 2rem 2rem;
+      width: 80%;
+    }
+    .tag {
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+//themes
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+@import "./variables";
+
+// Components
+@import "_intro";
+@import "_navbar";
+@import "_dev";
+@import "footer";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.9rem;
+  font-family: "Roboto", sans-serif;
+  background-color: $gray-0;
+  box-sizing: border-box;
+}
